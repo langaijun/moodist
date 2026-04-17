@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     AstroPWA({
       manifest: {
-        background_color: '#09090b',
+        background_color: '#F8F9FA',
         description: 'Ambient sounds for focus and calm.',
         display: 'standalone',
         icons: [
@@ -23,7 +23,7 @@ export default defineConfig({
         scope: '/',
         short_name: 'Moodist',
         start_url: '/',
-        theme_color: '#09090b',
+        theme_color: '#2E86AB',
       },
       registerType: 'prompt',
       workbox: {

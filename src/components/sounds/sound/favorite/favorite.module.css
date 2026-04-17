@@ -8,7 +8,7 @@
   width: 30px;
   height: 30px;
   line-height: 0;
-  color: var(--color-foreground-subtle);
+  color: #ffb3b3;
   cursor: pointer;
   background-color: black;
   background-color: var(--color-neutral-100);
@@ -18,7 +18,11 @@
 
   &:hover,
   &:focus-visible {
-    color: var(--color-foreground);
+    color: #ff9e9e;
+  }
+
+  &:active {
+    color: #ff8989;
   }
 
   &:focus-visible {
@@ -27,6 +31,10 @@
   }
 
   &.isFavorite {
-    color: var(--color-foreground);
+    color: #ff9e9e;
+  }
+
+  &.isFavorite:active {
+    color: #ff8989;
   }
 }

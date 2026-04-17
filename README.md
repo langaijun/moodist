@@ -2,7 +2,7 @@
   <img src="/assets/banner.png" alt="Moodist Logo Banner" />
   <h2>Moodist 🌲</h2>
   <p>Ambient sounds for focus and calm.</p>
-  <a href="https://moodist.mvze.net">Visit <strong>Moodist</strong></a> | <a href="https://buymeacoffee.com/remvze">Buy Me a Coffee</a>
+  <a href="https://moodist.mvze.net">Visit <strong>Moodist</strong></a> | <a href="https://ko-fi.com/langaijun">Support on Ko-fi</a>
 </div>
 
 ## Table of Contents
@@ -75,7 +75,7 @@
 
 ⭐ Give a star if you liked this project.
 
-☕ [Buy Me a Coffee](https://buymeacoffee.com/remvze) to help me maintain Moodist.
+☕ [Support on Ko-fi](https://ko-fi.com/langaijun) to help me maintain Moodist.
 
 ## License
 

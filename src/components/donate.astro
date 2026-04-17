@@ -1,19 +1,31 @@
 ---
 import { Container } from './container';
+import { FaHeart } from 'react-icons/fa/index';
+import { BsSoundwave } from 'react-icons/bs/index';
+
+import { count as soundCount } from '@/lib/sounds';
+
+const count = soundCount();
 ---
 
 <Container>
   <section class="wrapper">
-    <p class="text">
-      Enjoy Moodist?{' '}
-      <a
-        href="https://buymeacoffee.com/remvze"
-        rel="noreferrer"
-        target="_blank"
-      >
-        Support with a donation!
-      </a>
-    </p>
+    <div class="soundsCount">
+      <span aria-hidden="true" class="icon">
+        <BsSoundwave />
+      </span>
+      <span>{count} Sounds</span>
+    </div>
+
+    <a
+      aria-label="Support with a donation!"
+      class="donationIcon"
+      href="https://ko-fi.com/langaijun"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <FaHeart />
+    </a>
   </section>
 </Container>
 
@@ -22,11 +34,9 @@ import { Container } from './container';
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 16px;
-    font-size: var(--font-xsm);
-    color: var(--color-foreground-subtle);
+    padding: 8px 0;
 
     &::after {
       position: absolute;
@@ -43,15 +53,82 @@ import { Container } from './container';
       );
       transform: translateX(-50%);
     }
+  }
 
-    & .text {
-      text-align: center;
+  .donationIcon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: var(--font-md);
+    color: #ffb3b3;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(
+      var(--color-neutral-50),
+      var(--color-neutral-100)
+    );
+    border: 1px solid var(--color-neutral-300);
+    border-radius: 50%;
+    transition: 0.2s;
+  }
 
-      & a {
-        font-weight: 500;
-        color: var(--color-foreground);
-        text-decoration: none;
-      }
+  .donationIcon:hover {
+    color: #ff9e9e;
+    background: linear-gradient(
+      var(--color-neutral-100),
+      var(--color-neutral-200)
+    );
+    transform: scale(1.15);
+  }
+
+  .donationIcon:active {
+    color: #ff8989;
+  }
+
+  .soundsCount {
+    position: relative;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 28px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: var(--font-xsm);
+    color: var(--color-foreground-subtle);
+    background: linear-gradient(var(--color-neutral-100), transparent);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: 100px;
+
+    & .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0 10px;
+      color: var(--color-foreground);
+      border-right: 1px solid var(--color-neutral-200);
+      border-radius: 0 100px 100px 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      width: 70%;
+      height: 1px;
+      content: '';
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-neutral-400),
+        transparent
+      );
+      transform: translateX(-50%);
     }
   }
 </style>
