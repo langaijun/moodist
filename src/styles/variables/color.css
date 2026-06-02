@@ -1,10 +1,10 @@
 :root {
   /* Custom Color Scheme - 东方美学配色 */
 
-  /* 背景：古绢原色 */
+  /* 背景：与 hushforsleep.com 统一 */
 
   /* 取自千年绢帛的温润，作为画卷的底色，让大脑保持平静 */
-  --bg-primary: #f2eada;
+  --bg-primary: #f5f0eb;
 
   /* 主色：青葡萄色 */
 
@@ -44,7 +44,7 @@
   --warning: #e67e22;
 
   /* Mapped to existing Moodist variables */
-  --color-neutral-50: #f2eada;
+  --color-neutral-50: #f5f0eb;
   --color-neutral-100: #fdf5e6;
   --color-neutral-200: #e8ddd0;
   --color-neutral-300: #d4d0c6;
