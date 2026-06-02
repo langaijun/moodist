@@ -24,16 +24,6 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
         >
           3-minute Sleep Blocker Quiz
         </a>
-        <a
-          class="entry-link"
-          data-hush-route="guides"
-          data-utm-content="header_guides"
-          href="https://www.hushforsleep.com/en/guides?utm_source=moodist&utm_medium=tool&utm_campaign=white_noise_entry&utm_content=header_guides"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Sleep Guides
-        </a>
       </div>
     </div>
     <a
@@ -82,9 +72,10 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
 
 <style>
   .header {
+    position: relative;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     max-width: 1200px;
     padding: 20px 24px;
     margin: 0 auto;
@@ -94,6 +85,8 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    text-align: center;
   }
 
   .main-title {
@@ -117,6 +110,9 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
   }
 
   .coffee-button {
+    position: absolute;
+    top: 20px;
+    right: 24px;
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -188,6 +184,8 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
     }
 
     .coffee-button {
+      top: 16px;
+      right: 20px;
       width: 40px;
       height: 40px;
     }
