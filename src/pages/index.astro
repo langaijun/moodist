@@ -9,9 +9,33 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
 
 <Layout title="Moodist: Ambient Sounds for Focus and Calm">
   <div class="header">
-    <h1 class="main-title">
-      Ambient Sounds<span class="line">For Focus and Calm</span>
-    </h1>
+    <div class="title-group">
+      <h1 class="main-title">
+        Ambient Sounds<span class="line">For Focus and Calm</span>
+      </h1>
+      <div aria-label="Sleep Astraea links" class="entry-links">
+        <a
+          class="entry-link"
+          data-hush-route="assessment"
+          data-utm-content="header_quiz"
+          href="https://www.hushforsleep.com/en/assessment?utm_source=moodist&utm_medium=tool&utm_campaign=white_noise_entry&utm_content=header_quiz"
+          rel="noreferrer"
+          target="_blank"
+        >
+          3-minute Sleep Blocker Quiz
+        </a>
+        <a
+          class="entry-link"
+          data-hush-route="guides"
+          data-utm-content="header_guides"
+          href="https://www.hushforsleep.com/en/guides?utm_source=moodist&utm_medium=tool&utm_campaign=white_noise_entry&utm_content=header_guides"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Sleep Guides
+        </a>
+      </div>
+    </div>
     <a
       aria-label="Support with a donation!"
       class="coffee-button"
@@ -37,14 +61,39 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
   <App client:load />
 </Layout>
 
+<script>
+  const links = document.querySelectorAll('[data-hush-route]');
+  const lang = navigator.language.toLowerCase();
+  const locale = lang.startsWith('zh') ? 'zh' : 'en';
+
+  links.forEach(link => {
+    const route = link.getAttribute('data-hush-route');
+    const utmContent = link.getAttribute('data-utm-content');
+    if (!route || !utmContent) return;
+
+    const url = new URL(`https://www.hushforsleep.com/${locale}/${route}`);
+    url.searchParams.set('utm_source', 'moodist');
+    url.searchParams.set('utm_medium', 'tool');
+    url.searchParams.set('utm_campaign', 'white_noise_entry');
+    url.searchParams.set('utm_content', utmContent);
+    link.setAttribute('href', url.toString());
+  });
+</script>
+
 <style>
   .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 1200px;
     padding: 20px 24px;
     margin: 0 auto;
+  }
+
+  .title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .main-title {
@@ -99,9 +148,39 @@ import CategoryIcons from '@/components/categories/category-icons/category-icons
     transform: scale(0.95);
   }
 
+  .entry-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .entry-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: var(--color-foreground);
+    text-decoration: none;
+    background: var(--color-neutral-100);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: 999px;
+    transition: 0.2s;
+  }
+
+  .entry-link:hover {
+    background: var(--color-neutral-200);
+    border-color: var(--color-neutral-400);
+  }
+
   @media (width <= 600px) {
     .header {
       padding: 16px 20px;
+    }
+
+    .title-group {
+      gap: 8px;
     }
 
     .main-title {
