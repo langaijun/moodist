@@ -13,6 +13,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const rain: Category = {
+  element: 'water',
   icon: <BsFillCloudRainFill />,
   id: 'rain',
   sounds: [

@@ -10,7 +10,7 @@
     & .tail {
       width: 1px;
       height: 75px;
-      background: linear-gradient(transparent, var(--color-neutral-300));
+      background: linear-gradient(transparent, var(--color-border));
     }
 
     & .icon {
@@ -51,9 +51,9 @@
       margin-bottom: 12px;
       font-size: var(--font-md);
       color: var(--color-foreground-subtle);
-      background: linear-gradient(var(--color-neutral-100), transparent);
-      border: 1px solid var(--color-neutral-200);
-      border-radius: 12px;
+      background-color: var(--color-muted);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
     }
 
     & .label {

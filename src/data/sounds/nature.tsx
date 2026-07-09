@@ -14,6 +14,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const nature: Category = {
+  element: 'wood',
   icon: <BiSolidTree />,
   id: 'nature',
   sounds: [

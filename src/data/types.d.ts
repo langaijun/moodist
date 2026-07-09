@@ -8,6 +8,7 @@ export interface Sound {
 export type Sounds = Array<Sound>;
 
 export interface Category {
+  element?: 'wood' | 'fire' | 'earth' | 'metal' | 'water';
   icon: React.ReactNode;
   id: string;
   sounds: Sounds;

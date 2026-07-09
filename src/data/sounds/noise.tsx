@@ -6,6 +6,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const noise: Category = {
+  element: 'water',
   icon: <BsSoundwave />,
   id: 'noise',
   sounds: [

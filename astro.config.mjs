@@ -23,7 +23,7 @@ export default defineConfig({
         scope: '/',
         short_name: 'Moodist',
         start_url: '/',
-        theme_color: '#2E86AB',
+        theme_color: '#FFFFFF',
       },
       registerType: 'prompt',
       workbox: {

@@ -9,6 +9,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const urban: Category = {
+  element: 'metal',
   icon: <FaCity />,
   id: 'urban',
   sounds: [

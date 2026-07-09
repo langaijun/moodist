@@ -24,6 +24,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const animals: Category = {
+  element: 'wood',
   icon: <FaDog />,
   id: 'animals',
   sounds: [

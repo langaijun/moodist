@@ -21,6 +21,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const places: Category = {
+  element: 'earth',
   icon: <MdLocationPin />,
   id: 'places',
   sounds: [

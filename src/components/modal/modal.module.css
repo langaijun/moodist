@@ -26,8 +26,9 @@
     padding-top: 40px;
     margin: 0 auto;
     pointer-events: fill;
-    background-color: var(--color-neutral-100);
-    border-radius: 8px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
 
     &.wide {
       width: 95%;
@@ -50,11 +51,11 @@
       cursor: pointer;
       background-color: transparent;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
       outline: none;
 
       &:focus-visible {
-        outline: 2px solid var(--color-neutral-400);
+        outline: 2px solid #c8b998;
         outline-offset: 2px;
       }
     }

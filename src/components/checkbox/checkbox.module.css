@@ -5,15 +5,15 @@
   width: 16px;
   height: 16px;
   cursor: pointer;
-  background: var(--color-neutral-100);
-  border: 2px solid var(--color-neutral-300);
+  background: var(--color-muted);
+  border: 2px solid var(--color-border);
   border-radius: 4px;
   transition: 0.2s;
 }
 
 .checkboxRoot[data-state='checked'] {
-  background: var(--color-neutral-950);
-  border: 2px solid var(--color-neutral-950);
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .checkboxIndicator {

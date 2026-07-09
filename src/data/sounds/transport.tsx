@@ -8,6 +8,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const transport: Category = {
+  element: 'metal',
   icon: <FaCarSide />,
   id: 'transport',
   sounds: [

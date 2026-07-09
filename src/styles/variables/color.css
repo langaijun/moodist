@@ -1,63 +1,76 @@
 :root {
-  /* Custom Color Scheme - 东方美学配色 */
+  /* === VibeWeather Neutral Palette === */
+  --color-page: #fff;
+  --color-surface: #fff;
+  --color-muted: #f8f9fa;
+  --color-border: #e8ecef;
+  --color-border-light: #f0f2f4;
+  --color-text: #333;
+  --color-text-muted: #666;
+  --color-text-subtle: #999;
+  --color-primary: #374151;
+  --color-primary-hover: #4b5563;
+  --color-accent: #4a6b48;
 
-  /* 背景：与 hushforsleep.com 统一 */
+  /* === Five Elements Palette === */
 
-  /* 取自千年绢帛的温润，作为画卷的底色，让大脑保持平静 */
-  --bg-primary: #f5f0eb;
+  /* Wood 木 🌿 */
+  --wuxing-wood-bg: #f0f4ef;
+  --wuxing-wood-bar: #9bb094;
+  --wuxing-wood-accent: #4a6b48;
+  --wuxing-wood-border: #d8e4d6;
 
-  /* 主色：青葡萄色 */
+  /* Fire 火 🔥 */
+  --wuxing-fire-bg: #f5efee;
+  --wuxing-fire-bar: #c6a5a3;
+  --wuxing-fire-accent: #8b6b69;
+  --wuxing-fire-border: #e8d8d6;
 
-  /* 你梦中摘下的那一串颜色，对应《只此青绿》中的"三绿" */
+  /* Earth 土 */
+  --wuxing-earth-bg: #f4f2e9;
+  --wuxing-earth-bar: #c8b998;
+  --wuxing-earth-accent: #7a6f52;
+  --wuxing-earth-border: #e5e0d0;
 
-  /* 用于核心执行按钮，象征乙木的生机与爆发力 */
-  --action-green: #a8e4a0;
+  /* Metal 金 ✦ */
+  --wuxing-metal-bg: #f5f5f5;
+  --wuxing-metal-bar: #b5b8bc;
+  --wuxing-metal-accent: #6b7280;
+  --wuxing-metal-border: #e5e7eb;
 
-  /* 辅助色：石青 */
+  /* Water 水 💧 */
+  --wuxing-water-bg: #e8eff4;
+  --wuxing-water-bar: #9eb8c9;
+  --wuxing-water-accent: #5a7a8f;
+  --wuxing-water-border: #d4e2ec;
 
-  /* 用于图标和边框，代表高瞻远瞩的判断力与深邃的孤独 */
-  --logic-blue: #224b5e;
-
-  /* 文字主色：松烟墨 */
-
-  /* 并非纯黑，带有水墨的呼吸感，用于所有核心文案 */
-  --text-ink: #2c2c2c;
-
-  /* 文字副色：矿物赭石 */
-
-  /* 用于说明文字或次要信息，提供视觉的稳定感与温暖度 */
-  --text-warm: #8b4513;
-
-  /* 高亮：砗磲白 */
-
-  /* 用于极小面积的点缀，如按钮上的文字或边框高光，代表纯洁的匠心 */
-  --pure-white: #fdf5e6;
-
-  /* Legacy variable mappings for compatibility */
+  /* === Legacy Aliases (渐进迁移) === */
+  --bg-primary: #fff;
   --bg-card: #fff;
-  --text-primary: #2c2c2c;
-  --text-secondary: #8b4513;
-  --accent-primary: #224b5e;
-  --accent-hover: #1a3542;
-  --border-light: rgb(34 75 94 / 15%);
-  --success: #a8e4a0;
-  --warning: #e67e22;
-
-  /* Mapped to existing Moodist variables */
-  --color-neutral-50: #f5f0eb;
-  --color-neutral-100: #fdf5e6;
-  --color-neutral-200: #e8ddd0;
-  --color-neutral-300: #d4d0c6;
-  --color-neutral-400: #8b4513;
-  --color-neutral-500: #6a3510;
-  --color-neutral-600: #552a0c;
-  --color-neutral-700: #402008;
-  --color-neutral-800: #2c2c2c;
+  --text-ink: #333;
+  --text-warm: #666;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --action-green: #4a6b48;
+  --logic-blue: #5a7a8f;
+  --pure-white: #fff;
+  --accent-primary: #374151;
+  --accent-hover: #4b5563;
+  --border-light: rgb(232 236 239);
+  --success: #4a6b48;
+  --warning: #7a6f52;
+  --color-neutral-50: #f8f9fa;
+  --color-neutral-100: #f8f9fa;
+  --color-neutral-200: #e8ecef;
+  --color-neutral-300: #e5e0d0;
+  --color-neutral-400: #7a6f52;
+  --color-neutral-500: #666;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #333;
   --color-neutral-900: #1a1a1a;
   --color-neutral-950: #0e0e0e;
-
-  /* Foreground */
-  --color-foreground: #2c2c2c;
-  --color-foreground-subtle: #8b4513;
-  --color-foreground-subtler: #6a3510;
+  --color-foreground: #333;
+  --color-foreground-subtle: #666;
+  --color-foreground-subtler: #999;
 }

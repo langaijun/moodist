@@ -17,6 +17,7 @@ import type { Category } from '../types';
 import { getAssetPath } from '@/helpers/path';
 
 export const things: Category = {
+  element: 'fire',
   icon: <MdSmartToy />,
   id: 'things',
   sounds: [
