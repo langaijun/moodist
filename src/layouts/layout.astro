@@ -26,6 +26,7 @@ const description =
     <meta content={Astro.generator} name="generator" />
     <meta content="#FFFFFF" name="theme-color" />
     <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link rel="canonical" href="https://moodist.nicep.cc" />
 
     <title>{title}</title>
     <meta content={title} name="title" />
@@ -37,8 +38,11 @@ const description =
     <meta content="https://moodist.app" property="og:url" />
     <meta content="website" property="og:type" />
     <meta content="https://moodist.app/og.png" property="og:image" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
 
     <meta content="summary_large_image" name="twitter:card" />
+    <meta content={description} name="twitter:description" />
 
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
   </head>

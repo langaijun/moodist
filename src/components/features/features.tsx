@@ -42,10 +42,6 @@ export function Features() {
       body: 'Contribute and collaborate, making the best even better.',
       id: 'open-source',
       label: 'Open-Source',
-      link: {
-        label: 'Source Code',
-        url: 'https://github.com/remvze/moodist',
-      },
     },
     {
       Icon: BsStars,
